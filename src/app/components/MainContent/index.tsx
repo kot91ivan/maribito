@@ -1,4 +1,5 @@
 import Container from "../Container"
+import FeaturedProjects from "../FeaturedProjects"
 import StatisticItem from "../StatisticItem"
 import TrustedItem from "../TrustedItem"
 
@@ -46,9 +47,7 @@ const MainContent = () => {
       </div>
 
       <div className="flex gap-4 w-full">
-        <Container title="Featured Projects" classnames="w-1/2">
-          Slider
-        </Container>
+        <FeaturedProjects />
 
         <Container title="Trusted by" classnames="w-1/2">
           <div className="flex flex-wrap gap-4">
