@@ -1,5 +1,3 @@
-import Link from "next/link"
-
 const links = [
   {
     name: "Projects",
@@ -30,9 +28,9 @@ const Sidebar = () => {
       <div className="flex flex-col items-center gap-4 font-medium text-lg">
         {links.map(link => {
           return (
-            <Link key={link.link} href={`#${link.link}`}>
+            <a key={link.link} href={`#${link.link}`}>
               {link.name}
-            </Link>
+            </a>
           )
         })}
       </div>

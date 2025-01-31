@@ -31,7 +31,9 @@ const videoList = [
 const Projects = () => {
   return (
     <Container classnames="flex flex-col items-center py-10">
-      <h2 className="text-5xl font-bold">Projects</h2>
+      <h2 id="projects" className="text-5xl font-bold">
+        Projects
+      </h2>
       <div className="flex flex-wrap justify-center px-4">
         {videoList.map(video => {
           return <VideoPlayer key={video.name} url={video.url} />
