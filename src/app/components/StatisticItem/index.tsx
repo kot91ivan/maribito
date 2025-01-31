@@ -1,8 +1,3 @@
-"use client"
-
-import { useEffect, useRef } from "react"
-import VanillaTilt from "vanilla-tilt"
-
 type StatisticItemProps = {
   value?: string
   valueText?: string
@@ -10,24 +5,8 @@ type StatisticItemProps = {
 }
 
 const StatisticItem: React.FC<StatisticItemProps> = ({ value, valueText, text }) => {
-  const tiltRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    if (tiltRef.current) {
-      VanillaTilt.init(tiltRef.current, {
-        max: 15, // Максимальный угол наклона
-        speed: 400, // Скорость анимации
-        glare: true, // Добавить блик
-        "max-glare": 0.5 // Интенсивность блика
-      })
-    }
-
-    return () => {
-      tiltRef.current?.vanillaTilt?.destroy() // Убираем эффект при размонтировании
-    }
-  }, [])
   return (
-    <div ref={tiltRef} className="bg-container px-7 py-6 rounded-2xl flex flex-col justify-center ">
+    <div className="bg-container px-7 py-6 rounded-2xl flex flex-col justify-center ">
       {value && value?.length > 0 ? (
         <div>
           <div className="flex items-end gap-1">

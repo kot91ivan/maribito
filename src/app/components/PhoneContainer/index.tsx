@@ -1,5 +1,6 @@
 "use client"
 
+import { TiltHTMLElement } from "@/app/types"
 import Image from "next/image"
 import { useEffect, useRef } from "react"
 import VanillaTilt from "vanilla-tilt"
@@ -11,20 +12,20 @@ type PhoneContainerProps = {
 }
 
 const PhoneContainer: React.FC<PhoneContainerProps> = ({ isLarge, url, alt }) => {
-  const tiltRef = useRef<HTMLDivElement>(null)
+  const tiltRef = useRef<TiltHTMLElement>(null)
 
   useEffect(() => {
     if (tiltRef.current) {
       VanillaTilt.init(tiltRef.current, {
         max: 15, // Максимальный угол наклона
-        speed: 400, // Скорость анимации
+        speed: 300, // Скорость анимации
         glare: true, // Добавить блик
         "max-glare": 0.5 // Интенсивность блика
       })
     }
 
     return () => {
-      tiltRef.current?.vanillaTilt?.destroy() // Убираем эффект при размонтировании
+      tiltRef.current?.vanillaTilt?.destroy()
     }
   }, [])
   return (
