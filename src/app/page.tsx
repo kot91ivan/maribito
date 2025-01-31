@@ -27,9 +27,11 @@ export default function Home() {
         <Projects />
         <div></div>
       </main>
-      <footer className="row-start-3 flex gap-10 flex-wrap items-center justify-center bg-container rounded-t-3xl py-6">
-        <h2 className="font-black text-9xl lg:text-[160px]">lets collaborate!</h2>
-        <div className="flex items-center justify-between w-full px-8">
+      <footer className="row-start-3 flex gap-10 flex-wrap items-center justify-center bg-container rounded-t-3xl py-10">
+        <h2 id="contact" className="font-black text-9xl lg:text-[160px]">
+          lets collaborate!
+        </h2>
+        <div className="flex items-center justify-between w-full px-10">
           <div className="flex flex-col gap-4 items-start">
             <h3 className="text-3xl lg:text-5xl font-bold">
               Ready to create something <br /> <span className="text-accent">awesome together?</span>
@@ -48,6 +50,11 @@ export default function Home() {
               )
             })}
           </div>
+        </div>
+
+        <div className="flex justify-center w-full">
+          <p>&copy; All copyrights reserved. </p>
+          {/* <Link href="#">Created by Ivan Kudriashov</Link> */}
         </div>
       </footer>
       <Analytics />
