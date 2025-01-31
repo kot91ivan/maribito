@@ -17,6 +17,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: white; /* Меняем цвет стрелок */
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #facc15; /* Желтый цвет при наведении */
+}
+
 
 /* Цвет фона - #0F0F0F
 Цвет контейнеров - #1F1B1E

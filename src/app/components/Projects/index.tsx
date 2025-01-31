@@ -1,5 +1,12 @@
+"use client"
+
 import Container from "../Container"
 import VideoPlayer from "../VideoPlayer"
+
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Navigation } from "swiper/modules"
+import "swiper/css"
+import "swiper/css/navigation"
 
 const videoList = [
   {
@@ -30,15 +37,37 @@ const videoList = [
 
 const Projects = () => {
   return (
-    <Container classnames="flex flex-col items-center py-10">
+    <Container classnames="flex flex-col items-center py-10 w-full">
       <h2 id="projects" className="text-5xl font-bold">
         Projects
       </h2>
-      <div className="flex flex-wrap gap-4 md:gap-0 justify-center px-4">
+      {/* <div className="flex flex-wrap gap-4 md:gap-0 justify-center px-4">
         {videoList.map(video => {
           return <VideoPlayer key={video.name} url={video.url} />
         })}
-      </div>
+      </div> */}
+
+      <Swiper
+        modules={[Navigation]}
+        breakpoints={{
+          320: { slidesPerView: 1 },
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+          1280: { slidesPerView: 4 }
+        }}
+        spaceBetween={20}
+        slidesPerView={3}
+        navigation
+        className="w-full"
+      >
+        {videoList.map(video => {
+          return (
+            <SwiperSlide key={video.name}>
+              <VideoPlayer url={video.url} />
+            </SwiperSlide>
+          )
+        })}
+      </Swiper>
     </Container>
   )
 }
