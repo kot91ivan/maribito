@@ -15,7 +15,7 @@ const links = [
 
 const Sidebar = () => {
   return (
-    <div className="bg-container p-6 rounded-3xl flex flex-col gap-6 min-w-72">
+    <div className="bg-container p-6 rounded-3xl hidden md:flex flex-col gap-6 min-w-72">
       <div className="flex flex-col items-center gap-3">
         <div className="w-20 h-20 bg-slate-100 rounded-full"></div>
 

@@ -34,7 +34,7 @@ const Projects = () => {
       <h2 id="projects" className="text-5xl font-bold">
         Projects
       </h2>
-      <div className="flex flex-wrap justify-center px-4">
+      <div className="flex flex-wrap gap-4 md:gap-0 justify-center px-4">
         {videoList.map(video => {
           return <VideoPlayer key={video.name} url={video.url} />
         })}

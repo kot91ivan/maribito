@@ -27,16 +27,16 @@ const statistics = [
 
 const MainContent = () => {
   return (
-    <div className="flex flex-col gap-4">
-      <h1 className="text-primaryText font-bold text-6xl p-2">Your Ultimate AR Designer, Developer, Consultant</h1>
-      <div className="flex gap-4">
-        <div className="grid grid-cols-2 gap-3 w-1/2">
+    <div className="flex flex-col gap-8 md:gap-4">
+      <h1 className="text-primaryText font-bold text-4xl md:text-6xl p-2">Your Ultimate AR Designer, Developer, Consultant</h1>
+      <div className="flex flex-col-reverse md:flex-row gap-4">
+        <div className="grid md:grid-cols-2 gap-3 md:w-1/2">
           {statistics.map(stat => {
             return <StatisticItem key={stat.text} value={stat.value} valueText={stat.valueText} text={stat.text} />
           })}
         </div>
 
-        <Container classnames="w-1/2">
+        <Container classnames="md:w-1/2">
           <h2 className="text-primaryText font-bold text-2xl">Transforming Your Visions into Immersive Realities</h2>
           <p className="text-secondaryText">
             Say goodbye to the challenges of working with uninspired developers. Partner with an AR expert who combines cutting-edge
@@ -46,10 +46,10 @@ const MainContent = () => {
         </Container>
       </div>
 
-      <div className="flex gap-4 w-full">
+      <div className="flex flex-col md:flex-row gap-8 md:gap-4 w-full">
         <FeaturedProjects />
 
-        <Container title="Trusted by" classnames="w-1/2">
+        <Container title="Trusted by" classnames="md:w-1/2">
           <div className="flex flex-wrap gap-4">
             {trustedList.map(name => {
               return <TrustedItem key={name} name={name} />
