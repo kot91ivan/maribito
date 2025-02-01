@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Metana";
+  src: url("/fonts/NeueMetana-Regular.otf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metana";
+  src: url("/fonts/NeueMetana-Bold.otf") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
   --background: #0F0F0F;
   --primary-text: #f5f5f5;
@@ -27,6 +41,10 @@ body {
   color: #facc15; /* Желтый цвет при наведении */
 }
 
+.metanaTitle {
+  font-family: "Metana";
+  font-weight: 700;
+}
 
 /* Цвет фона - #0F0F0F
 Цвет контейнеров - #1F1B1E

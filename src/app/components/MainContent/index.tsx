@@ -28,7 +28,7 @@ const statistics = [
 const MainContent = () => {
   return (
     <div className="flex flex-col gap-8 md:gap-4">
-      <h1 className="text-primaryText font-bold text-4xl md:text-6xl p-2">Your Ultimate AR Designer, Developer, Consultant</h1>
+      <h1 className="text-primaryText font-bold text-4xl md:text-5xl p-2 metanaTitle">Your Ultimate AR Designer, Developer, Consultant</h1>
       <div className="flex flex-col-reverse md:flex-row gap-4">
         <div className="grid md:grid-cols-2 gap-3 md:w-1/2">
           {statistics.map(stat => {

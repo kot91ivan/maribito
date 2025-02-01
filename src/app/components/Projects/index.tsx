@@ -38,7 +38,7 @@ const videoList = [
 const Projects = () => {
   return (
     <Container classnames="flex flex-col items-center py-10 w-full">
-      <h2 id="projects" className="text-5xl font-bold">
+      <h2 id="projects" className="text-5xl font-bold metanaTitle">
         Projects
       </h2>
       {/* <div className="flex flex-wrap gap-4 md:gap-0 justify-center px-4">

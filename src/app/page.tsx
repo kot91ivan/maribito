@@ -27,7 +27,7 @@ export default function Home() {
         <Projects />
       </main>
       <footer className="row-start-3 flex gap-10 flex-wrap items-center justify-center bg-container rounded-t-3xl py-10">
-        <h2 id="contact" className="font-black text-5xl md:text-7xl lg:text-[160px]">
+        <h2 id="contact" className="font-bold text-5xl md:text-7xl lg:text-[112px] metanaTitle">
           lets collaborate!
         </h2>
         <div className="flex flex-col md:flex-row gap-10 items-center justify-between w-full px-10">
