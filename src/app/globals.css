@@ -21,6 +21,7 @@
   --primary-text: #f5f5f5;
   --secondary-text: #c3c3c3;
   --accent: #EFB621;
+  --hover-accent: #f9bf2c;
   --container: #1F1B1E;
   --inner-container: #282427;
 }
@@ -43,7 +44,7 @@ body {
 
 .metanaTitle {
   font-family: "Metana";
-  font-weight: 700;
+  font-weight: bold;
 }
 
 /* Цвет фона - #0F0F0F

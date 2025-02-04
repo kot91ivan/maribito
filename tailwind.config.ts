@@ -9,6 +9,7 @@ export default {
         primaryText: "var(--primary-text)",
         secondaryText: "var(--secondary-text)",
         accent: "var(--accent)",
+        hoverAccent: "var(--hover-accent)",
         container: "var(--container)",
         innerContainer: "var(--inner-container)"
       }

@@ -37,7 +37,7 @@ const videoList = [
 
 const Projects = () => {
   return (
-    <Container classnames="flex flex-col items-center py-10 w-full">
+    <Container classnames="flex flex-col items-center py-10 px-14 w-full">
       <h2 id="projects" className="text-5xl font-bold metanaTitle">
         Projects
       </h2>
