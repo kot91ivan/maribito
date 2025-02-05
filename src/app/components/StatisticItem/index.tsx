@@ -1,16 +1,22 @@
+import AnimatedNumber from "../AnimatedNumber"
+
 type StatisticItemProps = {
-  value?: string
+  value?: number
   valueText?: string
   text: string
+  hasPlus: boolean
 }
 
-const StatisticItem: React.FC<StatisticItemProps> = ({ value, valueText, text }) => {
+const StatisticItem: React.FC<StatisticItemProps> = ({ value, valueText, text, hasPlus }) => {
   return (
     <div className="bg-container px-7 py-6 rounded-2xl flex flex-col justify-center ">
-      {value && value?.length > 0 ? (
+      {value && value > 0 ? (
         <div>
           <div className="flex items-end gap-1">
-            <h3 className="text-accent font-extrabold text-5xl">{value}</h3>
+            <h3 className="text-accent font-extrabold text-5xl">
+              <AnimatedNumber value={Number(value)} />
+              {hasPlus && "+"}
+            </h3>
             <span className="text-primaryText font-semibold text-3xl">{valueText}</span>
           </div>
           <p className="text-primaryText font-bold">{text}</p>

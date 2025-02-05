@@ -6,22 +6,26 @@ import TrustedItem from "../TrustedItem"
 const trustedList = ["Simone", "Relocate.me", "Atomic Digital", "Subtropical", "Snapchat"]
 const statistics = [
   {
-    text: "Auguen Reality Creator"
+    text: "Auguen Reality Creator",
+    hasPlus: false
   },
   {
-    value: "300+",
+    value: 300,
     valueText: "",
-    text: "Completed projects"
+    text: "Completed projects",
+    hasPlus: true
   },
   {
-    value: "2+",
+    value: 2,
     valueText: "billions",
-    text: "Views"
+    text: "Views",
+    hasPlus: true
   },
   {
-    value: "8",
+    value: 8,
     valueText: "years",
-    text: "Creation experience"
+    text: "Creation experience",
+    hasPlus: false
   }
 ]
 
@@ -34,7 +38,7 @@ const MainContent = () => {
       <div className="flex flex-col-reverse md:flex-row gap-4">
         <div className="grid md:grid-cols-2 gap-3 md:w-1/2">
           {statistics.map(stat => {
-            return <StatisticItem key={stat.text} value={stat.value} valueText={stat.valueText} text={stat.text} />
+            return <StatisticItem key={stat.text} value={stat.value} valueText={stat.valueText} text={stat.text} hasPlus={stat.hasPlus} />
           })}
         </div>
 
