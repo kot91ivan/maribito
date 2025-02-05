@@ -5,11 +5,11 @@ import ContactUs from "../ContactUs"
 const socialLinks = [
   {
     name: "LinkedIn",
-    url: "#"
+    url: "https://www.linkedin.com/in/yehor-yehorkin-384344a1/"
   },
   {
     name: "Instagram",
-    url: "#"
+    url: "https://www.instagram.com/ne_egor_egorkin/"
   }
 ]
 
