@@ -6,8 +6,8 @@ import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   return (
-    <div className="max-w-screen-xl mx-auto pt-10 flex flex-col gap-10">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="max-w-screen-xl mx-auto pt-10 flex flex-col gap-12">
+      <main className="flex flex-col gap-12 row-start-2 items-center sm:items-start">
         <div className="flex gap-4">
           <Sidebar />
           <MainContent />

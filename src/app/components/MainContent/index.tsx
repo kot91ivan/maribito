@@ -28,7 +28,9 @@ const statistics = [
 const MainContent = () => {
   return (
     <div className="flex flex-col gap-8 md:gap-4">
-      <h1 className="text-primaryText font-bold text-4xl md:text-5xl p-2 metanaTitle">Your Ultimate AR Designer, Developer, Consultant</h1>
+      <h1 className="text-primaryText font-bold text-4xl md:text-5xl p-4 pb-2 metanaTitle">
+        Your Ultimate AR Designer, Developer, Consultant
+      </h1>
       <div className="flex flex-col-reverse md:flex-row gap-4">
         <div className="grid md:grid-cols-2 gap-3 md:w-1/2">
           {statistics.map(stat => {
@@ -36,7 +38,7 @@ const MainContent = () => {
           })}
         </div>
 
-        <Container classnames="md:w-1/2">
+        <Container classnames="md:w-1/2 gap-4">
           <h2 className="text-primaryText font-bold text-2xl">Transforming Your Visions into Immersive Realities</h2>
           <p className="text-secondaryText">
             Say goodbye to the challenges of working with uninspired developers. Partner with an AR expert who combines cutting-edge
