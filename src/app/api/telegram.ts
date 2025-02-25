@@ -1,5 +1,5 @@
-const tokenBot = "8142568238:AAHDH85s5YyyiuNXbcff9MKbHyIA58Gug54"
-const chatId = "-4737310557"
+const tokenBot = process.env.TELEGRAM_TOKEN
+const chatId = process.env.TELEGRAM_CHAT_ID
 const baseUrl = `https://api.telegram.org/bot${tokenBot}/`
 
 export const sendMessage = async (message: string): Promise<void> => {

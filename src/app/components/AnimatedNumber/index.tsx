@@ -4,7 +4,7 @@ import { motion, useMotionValue, useSpring } from "framer-motion"
 import { useEffect, useState } from "react"
 
 const AnimatedNumber = ({ value }: { value: number }) => {
-  const count = useMotionValue(0)
+  const count = useMotionValue(1)
   const spring = useSpring(count, { stiffness: 100, damping: 25 }) // Плавная анимация
   const [displayValue, setDisplayValue] = useState(0)
 
